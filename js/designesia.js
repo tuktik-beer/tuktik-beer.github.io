@@ -727,7 +727,7 @@
 		// mainmenu create span
 		jQuery('#mainmenu li a').each(function() {
 			if ($(this).next("ul").length > 0) {
-				$("<span></span>").insertAfter($(this));
+				$("<span style='width: 100%;'></span>").insertAfter($(this));
 			}
 		});
 		// mainmenu arrow click

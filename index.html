@@ -1,72 +1,616 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>👰tuktik ❤️ beer🤵</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #f9f6f2;
-      color: #333;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
+    <meta charset="utf-8">
+    <title>tuktik 👰🏻‍♀️ ❤️ 🤵🏻 beer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lovus is responsive wedding html website template">
+    <meta name="keywords" content="wedding,couple,ceremony,reception,rsvp,gallery,event,countdown">
+    <meta name="author" content="">
 
-    header {
-      padding: 40px 20px;
-      background: #fff;
-      border-bottom: 1px solid #ddd;
-    }
+    <link rel = "icon" href = 
+    "https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png" 
+            type = "image/x-icon">
+    
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+Thai:300,400,700" rel="stylesheet">
 
-    h1 {
-      font-size: 2.5em;
-      color: #b48b6c;
-      margin-bottom: 0.2em;
-    }
 
-    h2 {
-      font-size: 1.5em;
-      margin-top: 0;
-      color: #888;
-    }
+    <!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
 
-    section {
-      padding: 40px 20px;
-    }
 
-    .date {
-      font-size: 1.2em;
-      margin-bottom: 10px;
-    }
+    <!-- CSS Files
+    ================================================== -->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery.countdown.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/animsition.min.css" type="text/css">
+    <link rel="stylesheet" href="rsvp/form.css">
 
-    .location {
-      font-size: 1.1em;
-      color: #666;
-    }
 
-    footer {
-      padding: 20px;
-      font-size: 0.9em;
-      color: #999;
-    }
-  </style>
+    <!-- custom background -->
+    <link rel="stylesheet" href="css/bg.css" type="text/css">
+
+    <!-- color scheme -->
+    <link rel="stylesheet" href="css/color.css" type="text/css" id="colors">
 </head>
-<body>
-  <header>
-    <h1>พิธีมงคลสมรส</h1>
-    <h2>👰tuktik & beer🤵</h2>
-  </header>
 
-  <section>
-    <div class="date">วันพฤหัสบดีที่ 7 สิงหาคม พ.ศ. 2568</div>
-    <div class="location">ณ บ้านเลขที่ 140 ม.9 ต.บางดี อ.ห้วยยอด จ.ตรัง (บ้านสวนเรียน)</div>
-  </section>
+<body id="homepage">
 
-  <footer>
-    ด้วยความรัก<br />
-    #TuktikAndBeerForever
-  </footer>
+    <div id="wrapper">
+
+        <!-- header begin -->
+        <header>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- logo begin -->
+                        <div id="logo">
+                            <a href="index.html">
+                                <h2>Tuktik<span>&amp;</span>Beer</h2>
+                            </a>
+                        </div>
+                        <!-- logo close -->
+
+                        <!-- small button begin -->
+                        <span id="menu-btn"></span>
+                        <!-- small button close -->
+
+                        <span class="btn-rsvp">T & B</span>
+
+                        <!-- mainmenu begin -->
+                        <nav>
+                            <ul id="mainmenu">
+                                <li><a href="index.html">หน้าหลัก</a>
+                                </li>
+                                <li><a href="#">ข้อมูลเกี่ยวกับ</a>
+                                    <ul>
+                                        <li><a href="about-her.html">เจ้าสาว</a></li>
+                                        <li><a href="about-him.html">เจ้าบ่าว</a></li>
+                                    </ul>
+                                </li>
+                                <!-- <li><a href="events.html">พิธีการ</a></li> -->
+                                <li><a href="gallery.html">รูปแห่งความรัก</a></li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                    <!-- mainmenu close -->
+
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+
+        <!-- content begin -->
+        <div id="content" class="no-bottom no-top">
+
+            <!-- rsvp popup begin -->
+            <div id="popup-box" class="full-height">
+                <span class="btn-close">
+					<i class="icon_close"></i>
+				</span>
+
+                <div class="container center-y">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2 class="deco id-color"><span>เราสองคนมีความยินดีเรียนเชิญท่าน</span></h2>
+                            <h2 data-wow-delay=".2s">วันพฤหัสบดีที่ 7 สิงหาคม  2568</h2>
+                            <h3>ธีมสีงาน</h3>
+                            <span class="circle-wrapper">
+                              <span class="circle1"></span>
+                              <span class="circle2"></span>
+                              <span class="circle3"></span>
+                            </span>
+
+                        </div>
+
+                        <div class="spacer-double"></div>
+
+                        <div class="col-md-5 col-md-offset-1 text-right">
+                          <h3>พิธีแห่ขันหมาก</h3>
+                          <i class="fa fa-clock-o"></i> 09:49 น.<br>
+                          <a href="https://maps.app.goo.gl/ovfeg6idLGqpcCPy5">
+                              ดูสถานที่ <i class="fa fa-angle-right"></i>
+                          </a>
+                      </div>
+
+                      <div class="col-md-5">
+                          <h3>พิธีหลั่งน้ำสังข์</h3>
+                          <i class="fa fa-clock-o"></i> 10:49 น.<br>
+                          <a href="https://maps.app.goo.gl/ovfeg6idLGqpcCPy5">
+                              ดูสถานที่ <i class="fa fa-angle-right"></i>
+                          </a>
+                      </div>
+                      <div class="spacer-single"></div>
+                      
+
+                      <div class="col-md-5 col-md-offset-1 text-right">
+                          <h3>ฉลองมงคลสมรส</h3>
+                          <i class="fa fa-clock-o"></i> 15:00-18:00 น.<br>
+                          <a href="https://maps.app.goo.gl/ovfeg6idLGqpcCPy5">
+                              ดูสถานที่ <i class="fa fa-angle-right"></i>
+                          </a>
+                      </div>
+
+                      <div class="col-md-5">
+                          <h3>ร่วมชมวงดนตรี</h3>
+                          <i class="fa fa-clock-o"></i> 19:00 น.<br>
+                          <a href="https://maps.app.goo.gl/ovfeg6idLGqpcCPy5">
+                              ดูสถานที่ <i class="fa fa-angle-right"></i>
+                          </a>
+                      </div>
+                      <div class="spacer-single"></div> 
+                        <!-- <div class="spacer-double"></div>
+                        <div class="spacer-single"></div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- rsvp popup close -->
+
+            <!-- section begin -->
+            <section id="section-hero" class="full-height relative z1 owl-slide-wrapper no-top no-bottom text-light" data-stellar-background-ratio=".2">
+                <div class="owl-slider-nav">
+                    <div class="next"></div>
+                    <div class="prev"></div>
+                </div>
+
+                <div class="center-y fadeScroll relative" data-scroll-speed="4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <div class="row">
+                                    <div class="spacer-single"></div>
+                                    <div class="col-md-5 text-right text-center-sm relative">
+                                        <h2 class="name">Tuktik</h2>
+                                    </div>
+                                    <div class="col-md-2 text-center">
+                                        <span class="deco-big" data-scroll-speed="2">&amp;</span>
+                                    </div>
+                                    <div class="col-md-5 text-left text-center-sm relative">
+                                        <h2 class="name">Beer</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="custom-owl-slider" class="owl-slide" data-scroll-speed="2">
+                    <div class="item">
+                        <img src="beer/PDK_6680.jpg" alt="">PDK_6680
+                    </div>
+                    <div class="item">
+                        <img src="beer/PDK_6650.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="beer/PDK_7792.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="beer/PDK_8265.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="beer/PDK_8227.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <!-- section close -->
+
+
+            <!-- section begin -->
+            <section id="section-couple" class="no-top">
+                <div class="container relative mt-60 z-index">
+                    <div class="row">
+
+                        <div class="col-md-5 col-md-offset-1 text-center">
+                            <img src="beer/jb.jpg" alt="" class="img-responsive img-rounded wow fadeInLeft" data-wow-delay=".2s" />
+                            <div class="padding40">
+                                <h2>Beer</h2>
+                                <h3>ส.ต.ท.หัตถชัย แซ่ซู้ (เบียร์)</h3>
+                                <h4>( นายเรียง แซ่ซู้ & นางอุไรวรรณ แซ่ซู้ )</h4>
+                                <p>จบการศึกษา มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตสุราษฎร์ธานี หลักสูตรบริหารธุรกิจบัณฑิต คณะศิลปศาสตร์และวิทยาการจัดการ สาขาวิชาการจัดการธุรกิจการท่องเที่ยวและโลจิสติกส์เพื่อการท่องเที่ยว </p>
+                                <p>นักเรียนนายสิบตำรวจ รุ่นที่ 12 (ขุนทะเล 36) กองร้อยที่ 3 ศูนย์ฝึกอบรมตำรวจภูธรภาค 8</p>
+                                <p>ปัจจุบันดำรงตำแหน่ง ผบ.หมู่ (ป.) สภ.เมืองนครศรีธรรมราช กองบังคับการ ตำรวจภูธรจังหวัดนครศรีธรรมราช กองบัญชาการ ตำรวจภูธรภาค 8</p>
+                                <!-- social icons -->
+                                <div class="social-icons-sm">
+                                    <a href="https://www.facebook.com/beer.menzaa" title="Beer on Facebook"><i class="fa fa-facebook"></i></a>
+                                    <!-- <a href="https://instagram.com/azumi_aoyjung?utm_medium=copy_link"><i class="fa fa-instagram"></i></a> -->
+                                </div>
+                                <!-- social icons close -->
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 text-center">
+                            <img src="beer/jc.jpg" alt="" class="img-responsive img-rounded wow fadeInRight" data-wow-delay=".2s" />
+                            <div class="padding40">
+                                <h2>Tuktik</h2>
+                                <h3>นางสาวจิราวรรณ มีศรี (ตุ๊กติ๊ก)</h3>
+                                <h4>( นายสมบัติ  มีศรี & นางหนูพริ้ม มีศรี )</h4>
+                                <p>ระดับปริญญาตรี มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตสุราษฎร์ธานี หลักสูตรวิทยาศาสตรบัณฑิต คณะวิทยาศาสตร์ สาขาวิชาเทคโนโลยีอาหาร</p>
+                                <p>ปัจจุบัน ประกอบอาชีพธุรกิจส่วนตัว</p>
+                                <!-- social icons -->
+                                <div class="social-icons-sm">
+                                    <a href="https://www.facebook.com/jirawan.meesri.2024"><i class="fa fa-facebook"></i></a>
+                                    <!-- <a href="https://instagram.com/ton.tanatip?r=nametag"><i class="fa fa-instagram"></i></a> -->
+                                </div>
+                                <!-- social icons close -->
+                            </div>
+                        </div>
+
+                        <div class="col-md-2 col-md-offset-5 text-center absolute">
+                            <span class="circle wow zoomIn" data-wow-delay=".8s">
+								<i class="fa fa-heart"></i>
+							</span>
+                        </div>
+
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- section close -->
+
+            <!-- section begin -->
+            <section id="section-quote" aria-label="section-quote-1" class="text-light" data-stellar-background-ratio=".2">
+                <div class="container">
+                    <div class="row wow fadeInUp">
+                        <div class="col-md-8 col-md-offset-2">
+                            <blockquote class="very-big text-light wow fadeIn">
+                                ไม่ใช่แค่เจ้าสาวที่สวยที่สุดในงาน... แต่คือคนที่ผมจะรักที่สุดไปตลอดชีวิต
+                                <span>Beer</span>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section close -->
+
+            <!-- section begin -->
+            <section id="section-event">
+                <div class="container">
+                                      <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2 class="deco id-color"><span>เราสองคนมีความยินดีเรียนเชิญท่าน</span></h2>
+                            <h2 data-wow-delay=".2s">วันพฤหัสบดีที่ 7 สิงหาคม  2568</h2>
+                            <h3>ธีมสีงาน</h3>
+                            <span class="circle-wrapper">
+                              <span class="circle1"></span>
+                              <span class="circle2"></span>
+                              <span class="circle3"></span>
+                            </span>
+
+                        </div>
+
+                        <div class="spacer-double"></div>
+
+                        <div class="col-md-5 col-md-offset-1 text-right">
+                          <h3>พิธีแห่ขันหมาก</h3>
+                          <i class="fa fa-clock-o"></i> 09:49 น.<br>
+                          <a href="https://maps.app.goo.gl/ovfeg6idLGqpcCPy5">
+                              ดูสถานที่ <i class="fa fa-angle-right"></i>
+                          </a>
+                      </div>
+
+                      <div class="col-md-5">
+                          <h3>พิธีหลั่งน้ำสังข์</h3>
+                          <i class="fa fa-clock-o"></i> 10:49 น.<br>
+                          <a href="https://maps.app.goo.gl/ovfeg6idLGqpcCPy5">
+                              ดูสถานที่ <i class="fa fa-angle-right"></i>
+                          </a>
+                      </div>
+                      <div class="spacer-single"></div>
+                      
+
+                      <div class="col-md-5 col-md-offset-1 text-right">
+                          <h3>ฉลองมงคลสมรส</h3>
+                          <i class="fa fa-clock-o"></i> 15:00-18:00 น.<br>
+                          <a href="https://maps.app.goo.gl/ovfeg6idLGqpcCPy5">
+                              ดูสถานที่ <i class="fa fa-angle-right"></i>
+                          </a>
+                      </div>
+
+                      <div class="col-md-5">
+                          <h3>ร่วมชมวงดนตรี</h3>
+                          <i class="fa fa-clock-o"></i> 19:00 น.<br>
+                          <a href="https://maps.app.goo.gl/ovfeg6idLGqpcCPy5">
+                              ดูสถานที่ <i class="fa fa-angle-right"></i>
+                          </a>
+                      </div>
+
+                      <div class="spacer-single">
+                      </div>
+                      
+                        <div style="text-align: center;">
+
+                          <img src="beer/qrcode.jpg" alt="คำอธิบายรูป" width="200" height="auto">
+                        </div>
+                        <!-- <div class="spacer-double"></div>
+                        <div class="spacer-single"></div> -->
+                    </div>
+                </div>
+            </section>
+            <!-- section close -->
+
+            <!-- section begin -->
+            <!-- <section id="section-countdown" aria-label="section-countdown" class="pt60 pb60 text-light" data-stellar-background-ratio=".2" style="background-size: cover; background-position: 0px -0.3px;">
+                <div class="container" style="background-size: cover;">
+                    <div class="row" style="background-size: cover;">
+                        <div class="col-md-12 text-center" style="background-size: cover;">
+                            <h3>เรามาร่วมนับถอยหลังไปด้วยกัน</h3>
+                        </div>
+                        <div class="col-md-8 col-md-offset-2" style="background-size: cover;">
+                            <div class="spacer-double" style="background-size: cover;"></div>
+                            <div id="defaultCountdown" class="wow fadeIn is-countdown animated" style="visibility: visible; animation-name: fadeIn; background-size: cover;">
+                                <span class="countdown-row countdown-show4">
+                                    <span class="countdown-section">
+                                        <span class="countdown-amount">0</span>
+                                        <span class="countdown-period">วัน</span>
+                                    </span>
+                                    <span class="countdown-section">
+                                        <span class="countdown-amount">0</span>
+                                        <span class="countdown-period">Hours</span>
+                                    </span>
+                                    <span class="countdown-section">
+                                        <span class="countdown-amount">0</span>
+                                        <span class="countdown-period">Minutes</span>
+                                    </span>
+                                    <span class="countdown-section">
+                                        <span class="countdown-amount">0</span>
+                                        <span class="countdown-period">Seconds</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="spacer-single" style="background-size: cover;"></div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <!-- section close -->
+            
+            <!-- section begin -->
+            <section id="section-countdown" aria-label="section-countdown" class="pt60 pb60 text-light" data-stellar-background-ratio=".2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h3>Time left until event</h3>
+                        </div>
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="spacer-double"></div>
+                            <div id="defaultCountdown" class="wow fadeIn"></div>
+                            <div class="spacer-single"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section id="section-gallery">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-12 text-center">
+                          <h2>รูปแห่งความรัก</h2>
+                          <div class="spacer-single"></div>
+                      </div>
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="de_tab tab_style_3 text-center">
+                                      <ul class="de_nav">
+                                          <li class="active" data-link="#section-services-tab"><span>หวาน</span></li>
+                                          <li data-link="#section-services-tab"><span>หวานมาก</span></li>
+                                          <li data-link="#section-services-tab"><span>หวานมากกว่า</span></li>
+                                      </ul>
+      
+                                      <div class="de_tab_content">
+      
+                                          <div id="tab1" class="tab_single_content">
+                                              <div class="row">
+      
+                                                  <div class="col-md-4 text-center mb10">
+                                                      <figure class="picframe img-rounded mb20">
+                                                          <a class="image-popup" href="beer/PDK_8227.jpg">
+                                                              <span class="overlay-v">
+                                                                  <i></i>
+                                                              </span>
+                                                          </a>
+                                                          <img src="beer/PDK_8227.jpg" class="img-responsive img-rounded" alt="">
+                                                      </figure>
+                                                  </div>
+                                                  <div class="col-md-4 text-center mb10">
+                                                      <figure class="picframe img-rounded mb20">
+                                                          <a class="image-popup" href="beer/PDK_8624.jpg">
+                                                              <span class="overlay-v">
+                                                                  <i></i>
+                                                              </span>
+                                                          </a>
+                                                          <img src="beer/PDK_8624.jpg" class="img-responsive img-rounded" alt="">
+                                                      </figure>
+                                                  </div>
+
+                                                  
+                                                  <div class="col-md-4 text-center mb10">
+                                                      <figure class="picframe img-rounded mb20">
+                                                          <a class="image-popup" href="beer/PDK_4363.jpg">
+                                                              <span class="overlay-v">
+                                                                  <i></i>
+                                                              </span>
+                                                          </a>
+                                                          <img src="beer/PDK_4363.jpg" class="img-responsive img-rounded" alt="">
+                                                      </figure>
+                                                  </div>
+                                                  <div class="clearfix"></div>
+                                              </div>
+                                          </div>
+      
+                                          <div id="tab2" class="tab_single_content">
+                                              <div class="row">
+       
+                                                  <div class="col-md-4 text-center mb10">
+                                                      <figure class="picframe img-rounded mb20">
+                                                          <a class="image-popup" href="beer/PDK_5340.jpg">
+                                                              <span class="overlay-v">
+                                                                  <i></i>
+                                                              </span>
+                                                          </a>
+                                                          <img src="beer/PDK_5340.jpg" class="img-responsive img-rounded" alt="">
+                                                      </figure>
+                                                  </div>
+       
+                                                  <div class="col-md-4 text-center mb10">
+                                                      <figure class="picframe img-rounded mb20">
+                                                          <a class="image-popup" href="beer/PDK_6773.jpg">
+                                                              <span class="overlay-v">
+                                                                  <i></i>
+                                                              </span>
+                                                          </a>
+                                                          <img src="beer/PDK_6773.jpg" class="img-responsive img-rounded" alt="">
+                                                      </figure>
+                                                  </div>
+       
+                                                  <div class="col-md-4 text-center mb10">
+                                                      <figure class="picframe img-rounded mb20">
+                                                          <a class="image-popup" href="beer/PDK_8287.jpg">
+                                                              <span class="overlay-v">
+                                                                  <i></i>
+                                                              </span>
+                                                          </a>
+                                                          <img src="beer/PDK_8287.jpg" class="img-responsive img-rounded" alt="">
+                                                      </figure>
+                                                  </div>
+                                                  <div class="clearfix"></div>
+                                              </div>
+                                          </div>
+      
+                                          <div id="tab3" class="tab_single_content">
+                                              <div class="row">
+       
+       
+                                                  <div class="col-md-4 text-center mb10">
+                                                      <figure class="picframe img-rounded mb20">
+                                                          <a class="image-popup" href="beer/PDK_4656.jpg">
+                                                              <span class="overlay-v">
+                                                                  <i></i>
+                                                              </span>
+                                                          </a>
+                                                          <img src="beer/PDK_4656.jpg" class="img-responsive img-rounded" alt="">
+                                                      </figure>
+                                                  </div>
+       
+                                                  <div class="col-md-4 text-center mb10">
+                                                      <figure class="picframe img-rounded mb20">
+                                                          <a class="image-popup" href="beer/PDK_8595.jpg">
+                                                              <span class="overlay-v">
+                                                                  <i></i>
+                                                              </span>
+                                                          </a>
+                                                          <img src="beer/PDK_8595.jpg" class="img-responsive img-rounded" alt="">
+                                                      </figure>
+                                                  </div>
+       
+                                                  <div class="col-md-4 text-center mb10">
+                                                      <figure class="picframe img-rounded mb20">
+                                                          <a class="image-popup" href="beer/PDK_8170.jpg">
+                                                              <span class="overlay-v">
+                                                                  <i></i>
+                                                              </span>
+                                                          </a>
+                                                          <img src="beer/PDK_8170.jpg" class="img-responsive img-rounded" alt="">
+                                                      </figure>
+                                                  </div>
+                                                  <div class="clearfix"></div>
+                                              </div>
+                                          </div>
+      
+                                      </div>
+      
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+            <!-- section begin -->
+            <section id="section-quote-2" aria-label="section-quote-2" class="text-light" data-stellar-background-ratio=".2" data-bgcolor="#f8578d">
+                <div class="container">
+                    <div class="row wow fadeInUp">
+                        <div class="col-md-8 col-md-offset-2">
+                            <blockquote class="very-big text-light wow fadeIn">
+                              จากคนแปลกหน้า กลายเป็นคนรู้ใจ และจากนี้คือครอบครัวของกันและกัน
+                                <span>Tuktik</span>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section close -->
+
+
+        </div>
+        <!-- content close -->
+
+        <!-- footer begin -->
+        <footer>
+            <div class="container text-center text-light">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="hs1 wow fadeInUp">Tuktik<span>&amp;</span>Beer</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subfooter">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-md-12">
+                            
+                            <span><a href="https://aef-nattanon.github.io/">&copy; Copyright 2025 Aef.nattanon (F)<a/></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer close -->
+
+        <a href="#" id="back-to-top"></a>
+        <div id="preloader">
+            <div class="preloader1"></div>
+        </div>
+    </div>
+	
+	<audio loop="loop" autoplay="autoplay">
+		<source src="music/Feels Like a Wedding Day.mp3" type="audio/mpeg" />
+	</audio>
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/easing.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/enquire.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.plugin.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script src="js/countdown-custom.js"></script>
+    <script src="js/animsition.min.js"></script>
+    <script src="js/designesia.js"></script>
+    <script src="rsvp/form.js"></script>
+
 </body>
+
 </html>
